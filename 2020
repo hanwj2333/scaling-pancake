@@ -1,0 +1,179 @@
+# list
+# x = ['f0', 'f00']
+# y=2
+# print(x*y)
+
+#tuble
+# classmates = ('Michael', 'Bob', 'Tracy')
+
+# s = input('birth: ')
+# birth = int(s)
+# if birth < 2000:
+#     print('00前')
+# else:
+#     print('00后')
+
+#计算bmi指数
+# h=input('enter your height')
+# w=input('enter your weight')
+# bmi = float(w)/(float(h)*float(h))
+# print('你的bmi指数为',bmi,'你的身体')
+# if bmi <18.5:
+#     print('过轻')
+# elif bmi>=18.5 and bmi<=25:
+#     print('正常')
+# elif bmi>= 25 and bmi<=28:
+#     print('过重')
+# elif bmi>= 28 and bmi<=32:
+#     print('肥胖')
+# else:
+#     print('严重肥胖')
+
+#for 循环
+# names = ['Michael', 'Bob', 'Tracy']
+# for name in names:
+#     print(name)
+
+# sum = 0
+# for x in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]:
+#     sum = sum + x
+# print(sum)
+
+# sum = 0
+# for x in range(101):
+#     sum = sum + x
+# print(sum)
+
+# L = ['Bart', 'Lisa', 'Adam']
+# for name in L:
+#     print('hello',name)
+
+
+#while循环
+
+# sum = 0
+# n = 99
+# while n > 0:
+#     sum = sum + n
+#     n = n - 2
+# print(sum)
+
+#dict
+# d = {'Michael': 95, 'Bob': 75, 'Tracy': 85}
+# str_list = ['a', 'a', 'b', 'a', 'b', 'c']
+# dic = {}
+# for i in str_list:
+#     if str_list.count(i) >= 1:
+#         dic[i] = str_list.count(i)
+# print(dic)
+
+# str_list = ['a', 'a', 'b', 'a', 'b', 'c']
+# s = set(str_list)
+# d = dict.fromkeys(s, 0)
+# for i in s:
+#     d[i] = str_list.count(i)
+# print(d)
+
+# 函数调用
+# x=100
+# y=hex(x)
+# print(y)
+# print(hex(10))
+
+# def power(x):
+#     return x * x
+# print(power(5))
+
+# def power(x, n):
+#     s = 1
+#     while n > 0:
+#         n = n - 1
+#         s = s * x
+#     return s
+# print(power(2,10) )
+
+# def fib(max):
+#     n, a, b = 0, 0, 1
+#     while n < max:
+#         print(b)
+#         a, b = b, a + b
+#         n = n + 1
+#     return 'done'
+# fib(10)
+
+# def fib(max):
+#     n, a, b = 0, 0, 1
+#     while n < max:
+#         yield b
+#         a, b = b, a + b
+#         n = n + 1
+#     return 'done'
+
+# 九九乘法表
+# for i in range(1, 10):
+#     for j in range(1, i + 1):
+#         print('%d*%d=%d' % (i, j, i * j), end='\t')
+#     print()
+
+# 水仙花数
+# for a in range(1,10):
+#     for b in range(0,9):
+#         for c in range(0,9):
+#             n=a*a*a+b*b*b+c*c*c
+#             if n==a*100+b*10+c:
+#                 print(n)
+
+# 完美数
+
+# for x in range(2,100000):
+#     n=0
+#     for y in range(1,x):
+#         if x%y==0:
+#            n=n+y
+#     if n==x:
+#         print(n)
+
+# 斐波那契
+# x=0
+# y=1
+# for a in range(20):
+#     (x,y)=(y,x+y)
+#     print(x,end=' ')
+
+#Craps赌博游戏
+# from  random  import randint
+# money = 10000
+# while money > 0:
+#     print ('你的资产', money)
+#     go_on = True
+#     debt=int(input('你要投注的金额： '))
+#     if debt>0 and debt<money :
+#        first = randint(1,6)+randint(1,6)
+#        print ('你摇出了',first)
+#        if first == 7 or first ==11 :
+#            print('玩家胜，玩家赢得了', debt)
+#            money = money + debt
+#            go_on = False
+#            break
+#        elif first == 2 or first == 3 or first == 12:
+#            print('庄家胜,玩家损失了', debt)
+#            money = money - debt
+#            go_on = False
+#        else :
+#            go_on = True
+#     else:
+#         input('请重新输入投注金额')
+#     while go_on ==True :
+#         second = randint(1,6)+randint(1,6)
+#         print('你摇出了', second)
+#         if first == second :
+#             print('玩家胜，玩家赢得了' , debt)
+#             money = money + debt
+#             go_on = False
+#             break
+#         elif second == 7:
+#             print('庄家胜' + '玩家损失了' , debt)
+#             money = money - debt
+#             go_on = False
+#         else:
+#             go_on = True
